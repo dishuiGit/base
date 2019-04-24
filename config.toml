@@ -1,3 +1,40 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = ""
+title = "滴水"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+# googleAnalytics = "{your tracking code}"
+
+[taxonomies]
+  series = "series"
+
+[params]
+    author = "滴水"
+    avatar = "avatar.jpg"
+    favicon = "favicon.png"
+    description = """
+        独立思考，实事求是，锲而不舍，以勤补拙
+    """
+    publicationYear = "2019"
+    listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    singlePageDateFormat = "January 2, 2006"
+    custom_css = ["/css/font-awesome.min.css"]
+    # custom_js = ["/js/custom.js"]
+
+[outputs]
+    section = ["JSON", "HTML"]
+
+[[menu.main]]
+    name = "Algo"
+    pre = "<i class='fa fa-fire fa-2x'></i>" #Choose your favorite font from Font Awesome
+    url = "http://algo.dishui.site"
+    weight = 10
+
+[[menu.main]]
+    name = "Note"
+    pre = "<i class='fa fa-leaf fa-2x'></i>"
+    url = "http://note.dishui.site"
+    weight = 20
+
